@@ -1,0 +1,8 @@
+.login-box.card {
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.form-group .form-control:focus {
+  font-weight: bold;
+}
