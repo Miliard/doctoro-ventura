@@ -1,13 +1,22 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiciologinService {
 
-  url: any = 'http://localhost/api/';
+  // url: any = 'http://localhost/api/';
+
+  // url: any = 'https://demo-doctor.polarizados-emmanuel.es/api/';
+
+  //  url: any = 'https://free-and-easy-boxca.000webhostapp.com/api';
+
+    url: any = 'https://gastro-center.es/api/';
+
+  // url = environment.url;
 
   @Output() nombre: EventEmitter<any> = new EventEmitter();
 

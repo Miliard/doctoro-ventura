@@ -6,3 +6,14 @@
 .form-group .form-control:focus {
   font-weight: bold;
 }
+
+
+
+.login-register {
+  background-image: url(../../../assets/assets/images/background/login-register.jpg);
+  height: 100vh; /* establece la altura en 100% del viewport height */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
