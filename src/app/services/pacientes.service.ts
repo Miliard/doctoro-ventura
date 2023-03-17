@@ -3,13 +3,24 @@ import { HttpClient } from '@angular/common/http';
 import { Pacientes } from '../interfaces/pacientes.interface';
 import { Historial } from '../interfaces/historial.interface';
 import { Doctor } from '../interfaces/doctor.interface';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PacientesService {
 
-  url: any = 'http://localhost/api/';
+  // url: any = 'http://localhost/api/';
+//  url: any = 'https://demo-doctor.polarizados-emmanuel.es/api/';
+
+  //  url: any = 'https://free-and-easy-boxca.000webhostapp.com/api';
+
+    url: any = 'https://gastro-center.es/api/';
+
+
+// url = environment.url;
+
+
 
   public menu = [
     {

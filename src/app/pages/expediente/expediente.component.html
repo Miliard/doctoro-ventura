@@ -95,7 +95,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="example-search-input" class="col-2 col-form-label">FrC.</label>
+                                            <label for="example-search-input" class="col-2 col-form-label">Presion A.</label>
                                             <div class="col-4">
                                                 <input class="form-control" type="text" name="expediente.fchistorial" [(ngModel)]="expediente.fchistorial" >
                                             </div>
@@ -111,7 +111,7 @@
                                         <div *ngIf="mostrar" >
                                             
                                             <div class="form-group row">
-                                                <label for="example-search-input" class="col-10 col-form-label">ANTECEDENTES HEREDOFAMILIARES</label>
+                                                <label for="example-search-input" class="col-10 col-form-label">MEDICO REFERENTE</label>
                                                 <div class="col-12">
                                                     <input class="form-control" type="text" name="expediente.ahhistorial" [(ngModel)]="expediente.ahhistorial" >
                                                 </div>
@@ -125,7 +125,7 @@
                                             </div>
                     
                                             <div class="form-group row">
-                                                <label for="example-search-input" class="col-10 col-form-label">HEMOTIPO</label>
+                                                <label for="example-search-input" class="col-10 col-form-label">TIPO DE SANGRE</label>
                                                 <div class="col-12">
                                                     <input class="form-control" type="text" name="expediente.hemotipohistorial" [(ngModel)]="expediente.hemotipohistorial" >
                                                 </div>
@@ -139,7 +139,7 @@
                                             </div>
                     
                                             <div class="form-group">
-                                                <label>ANTECEDENTES PERSONALES PATOLOGICOS</label>
+                                                <label>OBSERVACIONES AL PACIENTE</label>
                                                 <textarea class="form-control" rows="4" name="expediente.apphistorial" [(ngModel)]="expediente.apphistorial"></textarea>
                                             </div>
                     
@@ -205,8 +205,8 @@
                                                     <tr >
                                                         <th scope="col">PESO</th>
                                                         <th scope="col">TALLA</th>
-                                                        <th scope="col">FC</th>
-                                                        <th scope="col">FR</th>
+                                                        <th scope="col">Presion A.</th>
+                                                        <!-- <th scope="col">FR</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -225,7 +225,7 @@
                                         </div>
                                         <div *ngIf="mostrar" >                                                
                                             <div class="form-group row">
-                                                <label for="example-text-input" class="col-12 col-form-label">ANTECEDENTES HEREDOFAMILIARES</label>
+                                                <label for="example-text-input" class="col-12 col-form-label">MEDICO REFERENTE</label>
                                                 <div class="col-12">
                                                     <label for="example-text-input" class="col-form-label">{{expediente.ahhistorial}}</label>
                                                 </div>
@@ -237,7 +237,7 @@
                                                 </div>
                                             </div>                        
                                             <div class="form-group row">
-                                                <label for="example-search-input" class="col-12 col-form-label">HEMOTIPO</label>
+                                                <label for="example-search-input" class="col-12 col-form-label">TIPO DE SANGRE</label>
                                                 <div class="col-12">
                                                     <label for="example-text-input" class="col-form-label">{{expediente.hemotipohistorial}}</label>
                                                 </div>
@@ -249,7 +249,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
-                                                <label for="example-search-input" class="col-12 col-form-label">ANTECEDENTES PERSONALES PATOLOGICOS</label>
+                                                <label for="example-search-input" class="col-12 col-form-label">OBSERVACIONES AL PACIENTE</label>
                                                 <div class="col-12">
                                                     <label for="example-text-input" class="col-form-label">{{expediente.apphistorial}}</label>
                                                 </div>
