@@ -68,7 +68,7 @@ export class NuevoHistorialComponent implements OnInit {
   
   submit() {
     this.bloque = this.bloque + 1;
-    if( this.bloque == 4 ) {
+    if( this.bloque == 2 ) {
       Swal.fire(
         'Historial registrado con exito',
         '',
