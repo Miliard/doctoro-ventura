@@ -74,6 +74,9 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
+
+                            <!-- aqui se modifican las cosan en modales --> 
+
                             <h4 class="modal-title" id="myLargeModalLabel">Expediente </h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
@@ -83,6 +86,17 @@
                                 <div class="form-body">
                                 
                                     <div class="col-12">                                    
+
+                                        <div class="form-group row">
+                                            <label for="example-search-input" class="col-2 col-form-label">DUI</label>
+                                            <div class="col-4">
+                                                <input class="form-control" type="text" name="expediente.duihistorial" [(ngModel)]="expediente.duihistorial" >
+                                            </div>
+                                            <!-- <label for="example-search-input" class="col-2 col-form-label">Edad</label>
+                                            <div class="col-4">
+                                                <input class="form-control" type="text" name="expediente.tallahistorial" [(ngModel)]="expediente.tallahistorial" >
+                                            </div> -->
+                                        </div>
 
                                         <div class="form-group row">
                                             <label for="example-search-input" class="col-2 col-form-label">Peso</label>
@@ -185,6 +199,9 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
+
+                            <!-- aqui se dolo se ven los datos en la ventana model sin poder modificar nada -->
+
                             <h4 class="modal-title" id="myLargeModalLabel">Expediente </h4>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
@@ -216,6 +233,30 @@
                                                         <td >{{expediente.tallahistorial}}</td>
                                                         <td >{{expediente.fchistorial}}</td>
                                                         <td >{{expediente.frhistorial}}</td>
+                                                    </tr>       
+                                                </tbody>
+                                            </table>                                                
+                                        </div>
+
+                                        <div class="table-responsive-lg">
+                                            <table class="table"  >
+                                                <thead >
+                                                    <tr >
+                                                        <!-- <th scope="col">Peso</th> -->
+                                                        <!-- <th scope="col">Edad</th> -->
+                                                        <!-- <th scope="col">Presion A.</th> -->
+                                                        <!-- <th scope="col">Fecha de Nacimiento</th> -->
+                                                        <th scope="col">DUI</th>
+                                                        <!-- <th scope="col">FR</th> -->
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr >
+                                                        <!-- <td >{{expediente.pesohistorial}}</td> -->
+                                                        <!-- <td >{{expediente.tallahistorial}}</td> -->
+                                                        <!-- <td >{{expediente.fchistorial}}</td> -->
+                                                        <!-- <td >{{expediente.frhistorial}}</td> -->
+                                                        <td >{{expediente.duihistorial}}</td>
                                                     </tr>       
                                                 </tbody>
                                             </table>                                                
@@ -255,12 +296,11 @@
                                                     <label for="example-text-input" class="col-form-label">{{expediente.apphistorial}}</label>
                                                 </div>
                                             </div>
-                                                                                     
+                                            
                                             
                                         </div>
                                         
-                                       
-                                                                
+                                        
                                         <div class="form-group row">
                                             <label for="example-search-input" class="col-12 col-form-label">CITA PROXIMA</label>
                                             <div class="col-10">
@@ -283,7 +323,7 @@
                                         </div>                                                                                                     
                                     </div>               
                                 </div>
-                              
+                                
                         </div>
                         </form>
                     </div>

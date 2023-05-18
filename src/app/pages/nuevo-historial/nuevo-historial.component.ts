@@ -19,6 +19,7 @@ export class NuevoHistorialComponent implements OnInit {
   public multiBloque = new FormGroup({
     datosPaciente: new FormGroup( {
       nombre: new FormControl(''),
+      dui: new FormControl(''),
       peso: new FormControl(''),
       talla: new FormControl(''),
       frC: new FormControl(''),
