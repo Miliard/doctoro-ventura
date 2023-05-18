@@ -22,18 +22,21 @@ export class NuevoHistorialComponent implements OnInit {
       peso: new FormControl(''),
       talla: new FormControl(''),
       frC: new FormControl(''),
-      temperatura: new FormControl('')
-    }),
-    datosPaciente2: new FormGroup({
+      temperatura: new FormControl(''),
       ah: new FormControl(''),
       apnp: new FormControl(''),
       hemotipo: new FormControl(''),
       alergias: new FormControl(''),
-      app: new FormControl('')
-    }),
-    datosPaciente3: new FormGroup({
+      app: new FormControl(''),
       cita: new FormControl(''),
       diagnostico: new FormControl('')
+    }),
+    
+    datosPaciente2: new FormGroup({
+    
+    }),
+    datosPaciente3: new FormGroup({
+      
     })
   });
 
