@@ -10,13 +10,13 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class PacientesService {
 
-  // url: any = 'http://localhost/api/';
+  url: any = 'http://localhost/api/';
 
 //  url: any = 'https://demo-doctor.polarizados-emmanuel.es/api/';
 
   //  url: any = 'https://free-and-easy-boxca.000webhostapp.com/api';
 
-    url: any = 'https://gastro-center.es/api/';
+    // url: any = 'https://gastro-center.es/api/';
 
 
 // url = environment.url;

@@ -23,15 +23,16 @@
             <div class="col-12">
                 <form (ngSubmit)="submit();" [formGroup]="multiBloque" >
                 <div *ngIf="bloque == 1" formGroupName="datosPaciente">
-                    <div class="form-group row" >
+                    <div class="form-group row">
                         <label for="example-text-input" class="col-2 col-form-label">Nombre</label>
                         <div class="col-5">
-                            <select class="form-control" [(ngModel)]="newhistorial.idpaciente" formControlName="nombre">
-                                    <option *ngFor="let datos of pacientes" value="{{datos.idpaciente}}" >{{datos.nompaciente}}</option>
-                            </select>
+                            <ng-select class="form-control custom-select" [(ngModel)]="newhistorial.idpaciente" formControlName="nombre">
+                                <ng-option *ngFor="let datos of pacientes" [value]="datos.idpaciente">{{datos.nompaciente}}</ng-option>
+                            </ng-select>
                         </div>
-                        
                     </div>
+                    
+                    
 
                     <div class="form-group row">
                         <label for="example-search-input" class="col-2 col-form-label">DUI</label>

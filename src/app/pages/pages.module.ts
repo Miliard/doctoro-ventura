@@ -4,6 +4,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FiltrarTablaPipe } from '../pipes/filtrar-tabla.pipe';
+import { NgSelectModule } from '@ng-select/ng-select';
+
 
 import { PagesComponent } from './pages.component';
 import { LoginComponent } from './login/login.component';
@@ -24,7 +26,8 @@ import { NuevoHistorialComponent } from './nuevo-historial/nuevo-historial.compo
     ExpedienteComponent,
     HistorialPacienteComponent,
     NuevoHistorialComponent,
-    FiltrarTablaPipe
+    FiltrarTablaPipe,
+
   ],
   imports: [
     CommonModule,
@@ -32,6 +35,7 @@ import { NuevoHistorialComponent } from './nuevo-historial/nuevo-historial.compo
     FormsModule,
     NgxPaginationModule,
     ReactiveFormsModule,
+    NgSelectModule,
     ReactiveFormsModule.withConfig({ warnOnNgModelWithFormControl: 'never' })
   ]
 })

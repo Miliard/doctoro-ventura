@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Pacientes } from 'src/app/interfaces/pacientes.interface';
 import { PacientesService } from 'src/app/services/pacientes.service';
+import { NgSelectModule } from '@ng-select/ng-select';
 import Swal from 'sweetalert2';
 
 @Component({

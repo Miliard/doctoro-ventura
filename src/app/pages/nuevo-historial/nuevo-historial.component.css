@@ -1,0 +1,9 @@
+::ng-deep .ng-dropdown-panel {
+  background-color: yellow;
+  color: blue;
+  /* Agrega otros estilos personalizados aquí */
+}
+
+::ng-deep .ng-dropdown-panel .ng-option {
+  font-size: 20px; /* Ajusta el tamaño de la letra según tus necesidades */
+}
